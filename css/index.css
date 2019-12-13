@@ -1,3 +1,23 @@
+#sampleA,
+#sampleB {
+    padding: 5px 15px;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+}
+#sampleA {
+    background-color: red;
+}
+#sampleB {
+    background-color: blue;
+}
+#sampleController {
+    width: 360px;
+    margin: 10px 0;
+    text-align: center;
+}
+
+
 body{
 	margin:0;
 }
