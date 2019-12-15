@@ -1,10 +1,9 @@
-<script type="text/javascript">
 window.onload = function () {
-    var $sampleOutput = document.getElementById( "sampleOutput" );
-    var $sampleAElement = document.getElementById( "sampleA" );
-    $sampleAElement.onmousedown = function ( $event ) {
-        if( $event.button == 0 ){
-            $intervalID = setInterval(
+    var sampleOutput = document.getElementById( "sampleOutput" );
+    var sampleAElement = document.getElementById( "sampleA" );
+    sampleAElement.onmousedown = function ( event ) {
+        if( event.button == 0 ){
+            intervalID = setInterval(
                 function(){
                     countUpDown( 1 );
                 },
@@ -12,15 +11,15 @@ window.onload = function () {
             );
         }
     }
-    $sampleAElement.onmouseup = function ( $event ) {
-        if( $event.button == 0 ){
-            clearInterval( $intervalID );
+    sampleAElement.onmouseup = function ( event ) {
+        if( event.button == 0 ){
+            clearInterval( intervalID );
         }
     }
-    var $sampleBElement = document.getElementById( "sampleB" );
-    $sampleBElement.onmousedown = function ( $event ) {
-        if( $event.button == 0 ){
-            $intervalID = setInterval(
+    var sampleBElement = document.getElementById( "sampleB" );
+    sampleBElement.onmousedown = function ( event ) {
+        if( event.button == 0 ){
+            intervalID = setInterval(
                 function(){
                     countUpDown( -1 );
                 },
@@ -28,14 +27,13 @@ window.onload = function () {
             );
         }
     }
-    $sampleBElement.onmouseup = function ( $event ) {
-        if( $event.button == 0 ){
-            clearInterval( $intervalID );
+    sampleBElement.onmouseup = function ( event ) {
+        if( event.button == 0 ){
+            clearInterval( intervalID );
         }
     }
 }
-function countUpDown( $n ) {
-    var $sampleOutput = document.getElementById( "sampleOutput" );
-    $sampleOutput.innerHTML = parseInt( $sampleOutput.innerHTML ) + $n;
+function countUpDown( n ) {
+    var sampleOutput = document.getElementById( "sampleOutput" );
+    sampleOutput.innerHTML = parseInt( sampleOutput.innerHTML ) + n;
 }
-</script>
