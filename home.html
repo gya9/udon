@@ -1,9 +1,43 @@
-<link rel="stylesheet" type="text/css" href="/css/index.css" />
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <title>HTMLの書き方</title>
+  </head>
+  <body>
+    <div id="sampleOutput">1</div>
+    <div id="sampleController">
+        <span id="sampleA">＋</span>
+        <span id="sampleB">－</span>
+    </div>
+  </body>
+</html>
 
-<div id="sampleOutput">1</div>
-<div id="sampleController">
-    <span id="sampleA">＋</span>
-    <span id="sampleB">－</span>
-</div>
-
-<h1>test</h1>
+<style>
+#sampleA,
+#sampleB {
+    padding: 5px 15px;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+}
+#sampleA {
+    background-color: red;
+}
+#sampleB {
+    background-color: blue;
+}
+#sampleController {
+    width: 360px;
+    margin: 10px 0;
+    text-align: center;
+}
+#sampleOutput {
+    width: 300px;
+    padding: 30px;
+    font-size: 30px;
+    background-color: yellow;
+    text-align: center;
+    border-radius: 10px;
+}
+</style>
