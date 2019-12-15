@@ -34,10 +34,14 @@ body{
 	margin:0;
 }
 canvas{
-	position:absolute;
-	top: 0;
-	left:0;
-	background:white;
+	overflow:hidden;
+	position: relative;
+	float:left;
+	width:230px;
+	height:calc(100vh);
+	background-color:white;
+	border-left:3px solid #FFA493;
+	border-left:3px solid #EEEEEE;
 }
 #container{	
 	overflow:hidden;

@@ -7,68 +7,38 @@
     <script type="text/javascript" src="index.js"></script>
   </head>
   <body>
-    <div id='all'>
-      <div>
-      <canvas id="canvas" />
+    <div>
+    <canvas id="canvas" />
+    </div>
+
+    <div id="container">
+      <div id="rangeBox">
+        <input type="range" id="level" value="50" min="1" max="100" />
       </div>
-      <div id="container">
-        <div id="rangeBox">
-          <input type="range" id="level" value="50" min="1" max="100" />
+      <!--------------------------------------->
+      <div id="statBox">
+        <div class="switch">
+          <input type="checkbox" name="switch" class="switch-checkbox" id="Filled_Hollow">
+          <label class="switch-label" for="Filled_Hollow">
+                  <span class="switch-inner"></span>
+                  <span class="switch-switch"></span>
+                </label>
         </div>
-        <!--------------------------------------->
-        <div id="statBox">
-          <div class="switch">
-            <input type="checkbox" name="switch" class="switch-checkbox" id="Filled_Hollow">
-            <label class="switch-label" for="Filled_Hollow">
+        <!------------------------------>
+        <div class="switch">
+          <input type="checkbox" name="switch" class="switch-checkbox" id="blue_red">
+          <label class="switch-label" for="blue_red">
                     <span class="switch-inner"></span>
                     <span class="switch-switch"></span>
-                  </label>
-          </div>
-          <!------------------------------>
-          <div class="switch">
-            <input type="checkbox" name="switch" class="switch-checkbox" id="blue_red">
-            <label class="switch-label" for="blue_red">
-                      <span class="switch-inner"></span>
-                      <span class="switch-switch"></span>
-                  </label>
-          </div>
-          <div id="sampleOutput">1</div>
-          <div id="sampleController">
-              <span id="sampleA">＋</span>
-              <span id="sampleB">－</span>
-          </div>
+                </label>
         </div>
-        <!--------------------------------------->
+        <div id="sampleOutput">1</div>
+        <div id="sampleController">
+            <span id="sampleA">＋</span>
+            <span id="sampleB">－</span>
+        </div>
       </div>
+      <!--------------------------------------->
     </div>
   </body>
 </html>
-
-<!-- <style>
-#sampleA,
-#sampleB {
-    padding: 5px 15px;
-    border-radius: 10px;
-    color: white;
-    cursor: pointer;
-}
-#sampleA {
-    background-color: red;
-}
-#sampleB {
-    background-color: blue;
-}
-#sampleController {
-    width: 360px;
-    margin: 10px 0;
-    text-align: center;
-}
-#sampleOutput {
-    width: 300px;
-    padding: 30px;
-    font-size: 30px;
-    background-color: yellow;
-    text-align: center;
-    border-radius: 10px;
-}
-</style> -->
